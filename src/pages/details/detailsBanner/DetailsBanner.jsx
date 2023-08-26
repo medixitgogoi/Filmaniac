@@ -18,7 +18,7 @@ const DetailsBanner = ({ video, crew }) => {
 
     const { mediaType, id } = useParams();
     const { data, loading } = useFetch(`/${mediaType}/${id}`);
-    console.log(data);
+    // console.log(data);
     const { url } = useSelector((state) => state.home);
 
     const director = crew?.filter((f) => f.job === "Director");

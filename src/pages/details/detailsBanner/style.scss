@@ -6,9 +6,9 @@
   padding-top: 100px;
   margin-bottom: 50px;
   @include md {
-    margin-bottom: 0;
+    margin-bottom: 20px;
     padding-top: 120px;
-    min-height: 700px;
+    height: 100vh;
   }
   .backdropImg {
     width: 100%;
