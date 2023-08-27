@@ -1,7 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import Img from "../lazyLoadImage/Img";
-import CircleRating from "../circleRating/CircleRating";
 import PosterFallback from "../../assets/no-poster.png";
 import dayjs from "dayjs";
 import "./style.scss";
@@ -21,7 +20,6 @@ const MovieCard = ({ data, mediaType }) => {
         >
             <div className="posterBlock">
                 <Img className="posterImg" src={posterUrl} />
-                <CircleRating rating={data.vote_average.toFixed(1)} />
             </div>
             <div className="textBlock">
                 <span className="title">{data.title || data.name}</span>
