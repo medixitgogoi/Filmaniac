@@ -6,6 +6,7 @@ import ContentWrapper from "../../components/contentWrapper/ContentWrapper";
 import noResults from "../../assets/no-results.png";
 import MovieCard from "../../components/movieCard/MovieCard";
 import Img from "../../components/lazyLoadImage/Img";
+import Spinner from "../../components/spinner/Spinner";
 import "./style.scss";
 
 const SearchResult = () => {
@@ -49,7 +50,7 @@ const SearchResult = () => {
 
     return (
         <div className="searchResultsPage">
-            {loading && <div style={{ height: "700px", fontSize: "25px", color: "white", textAlign: "center" }}>Loading search page...</div>}
+            {loading && (<Spinner />)}
             {!loading && (
                 <ContentWrapper>
                     {data?.results?.length > 0 ? (
@@ -63,7 +64,7 @@ const SearchResult = () => {
                                 dataLength={data?.results?.length}
                                 next={fetchNextPageData}
                                 hasMore={pageNum <= data?.total_pages}
-                                loader={<div style={{height: "100vh"}}>Loading infinite scroll...</div>}
+                                loader={<Spinner />}
                             >
 
                                 {data?.results?.map((item, index) => {
