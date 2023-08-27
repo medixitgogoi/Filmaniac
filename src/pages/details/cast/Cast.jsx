@@ -7,7 +7,7 @@ import "./style.scss";
 const Cast = ({ data, loading }) => {
 
     const { url } = useSelector((state) => state.home);
-    console.log(data);
+    // console.log(data);
     return (
         <div className="castSection">
             <ContentWrapper>

@@ -7,7 +7,7 @@ import dayjs from "dayjs";
 import "./style.scss";
 import CircleRating from "../circleRating/CircleRating";
 
-const Carousel = ({ data, loading, endpoint }) => {
+const Carousel = ({ data, loading, endpoint, title }) => {
 
     const { url } = useSelector((state) => state.home);
     const navigate = useNavigate();
@@ -16,6 +16,7 @@ const Carousel = ({ data, loading, endpoint }) => {
         <div className="carousel">
 
             <ContentWrapper>
+                {title && <div className="carouselTitle">{title}</div>}
 
                 {!loading && (
                     <div className="carouselItems">
