@@ -1,7 +1,7 @@
 import { Puff } from "react-loader-spinner";
 import "./style.scss";
 
-const Spinner = () => {
+const SearchSpinner = () => {
     return (
         <div className='spinner'>
             <Puff
@@ -18,4 +18,4 @@ const Spinner = () => {
     );
 }
 
-export default Spinner;
+export default SearchSpinner;
