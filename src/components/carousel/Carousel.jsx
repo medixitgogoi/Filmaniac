@@ -13,6 +13,8 @@ const Carousel = ({ data, loading, endpoint, title }) => {
     const { url } = useSelector((state) => state.home);
     const navigate = useNavigate();
 
+    console.log(data)
+
     return (
         <div className="carousel">
 
@@ -34,7 +36,7 @@ const Carousel = ({ data, loading, endpoint, title }) => {
                                             {item.title || item.name}
                                         </span>
                                         <span className="date">
-                                            {dayjs(item.release_Date).format("MMM D, YYYY")}
+                                            {dayjs(item.release_date).format("MMM D, YYYY")}
                                         </span>
                                     </div>
                                 </div>
