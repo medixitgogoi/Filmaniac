@@ -6,6 +6,7 @@ import { useSelector } from "react-redux";
 import dayjs from "dayjs";
 import "./style.scss";
 import CircleRating from "../circleRating/CircleRating";
+import CarouselSpinner from "../spinner/carouselSpinner/CarouselSpinner";
 
 const Carousel = ({ data, loading, endpoint, title }) => {
 
@@ -18,7 +19,7 @@ const Carousel = ({ data, loading, endpoint, title }) => {
             <ContentWrapper>
                 {title && <div className="carouselTitle">{title}</div>}
 
-                {!loading && (
+                {!loading ? (
                     <div className="carouselItems">
                         {data?.map((item) => {
                             const posterUrl = item.poster_path ? url.poster + item.poster_path : PosterFallback;
@@ -40,6 +41,8 @@ const Carousel = ({ data, loading, endpoint, title }) => {
                             )
                         })}
                     </div>
+                ) : (
+                    <div><CarouselSpinner /></div>
                 )}
 
             </ContentWrapper>
