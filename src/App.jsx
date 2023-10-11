@@ -1,9 +1,8 @@
 import { useEffect } from 'react';
 import { fetchDataFromApi } from './utils/api';
-import { useSelector, useDispatch } from 'react-redux';
-import { getApiConfiguration, getGenres } from './features/home/homeSlice';
+import { useDispatch } from 'react-redux';
+import { getApiConfiguration } from './features/home/homeSlice';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
 import Header from './components/header/Header';
 import Footer from "./components/footer/Footer";
 import PageNotFound from "./pages/404/PageNotFound";

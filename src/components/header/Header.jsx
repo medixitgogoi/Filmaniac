@@ -77,7 +77,7 @@ const Header = () => {
 
         <div className="logo" onClick={() => navigate('/')}>
           <img src={logo} alt="app-logo" />
-          <span style={{ fontFamily: "fantasy" }}>Filmaniac</span>
+          <span style={{fontFamily: "cursive" }}>Filmaniac</span>
         </div>
 
         <ul className="menuItems">
