@@ -50,7 +50,7 @@ const SearchResult = () => {
 
     return (
         <div className="searchResultsPage">
-            {loading && (<SearchSpinner />)}
+            {loading && <SearchSpinner />}
             {!loading && (
                 <ContentWrapper>
                     {data?.results?.length > 0 ? (

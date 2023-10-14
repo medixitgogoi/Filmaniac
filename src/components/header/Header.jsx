@@ -76,7 +76,6 @@ const Header = () => {
       <ContentWrapper>
 
         <div className="logo" onClick={() => navigate('/')}>
-          <img src={logo} alt="app-logo" />
           <span style={{fontFamily: "revert-layer" }}>Filmaniac</span>
         </div>
 

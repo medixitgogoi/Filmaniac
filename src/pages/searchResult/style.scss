@@ -8,10 +8,13 @@
     color: var(--black-light);
   }
   .pageTitle {
-    font-size: 25px;
+    font-size: 21px;
     line-height: 34px;
     color: var(--blue);
     margin-bottom: 25px;
+    @include md {
+      font-size: 24px;
+    }
   }
   .content {
     display: flex;

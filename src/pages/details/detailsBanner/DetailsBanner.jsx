@@ -9,7 +9,6 @@ import useFetch from "../../../hooks/useFetch";
 import dayjs from "dayjs";
 import { PlayIcon } from "../PlayIcon";
 import VideoPopup from "../../../components/videoPopup/VideoPopup";
-import DetailSpinner from "../../../components/spinner/detailSpinner/DetailSpinner";
 import "./style.scss";
 
 const DetailsBanner = ({ video, crew }) => {
@@ -185,7 +184,20 @@ const DetailsBanner = ({ video, crew }) => {
                 </>
 
             ) : (
-                <div> <DetailSpinner /> </div>
+                <div className="detailsBannerSkeleton">
+                    <ContentWrapper>
+                        <div className="left skeleton"></div>
+                        <div className="right">
+                            <div className="row skeleton"></div>
+                            <div className="row skeleton"></div>
+                            <div className="row skeleton"></div>
+                            <div className="row skeleton"></div>
+                            <div className="row skeleton"></div>
+                            <div className="row skeleton"></div>
+                            <div className="row skeleton"></div>
+                        </div>
+                    </ContentWrapper>
+                </div>
             )}
 
         </div>

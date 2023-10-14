@@ -5,8 +5,8 @@ const SearchSpinner = () => {
     return (
         <div className='spinner'>
             <Puff
-                height="80"
-                width="80"
+                height="60"
+                width="60"
                 radius={1}
                 color="#4fa94d"
                 ariaLabel="puff-loading"
