@@ -2,11 +2,11 @@
 
 .videosSection {
   position: relative;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   .sectionHeading {
     font-size: 22px;
     color: var(--blue);
-    margin-bottom: 25px;
+    margin-bottom: 15px;
   }
   .videos {
     display: flex;
@@ -28,7 +28,7 @@
       }
       cursor: pointer;
       .videoThumbnail {
-        margin-bottom: 15px;
+        margin-bottom: 10px;
         position: relative;
         img {
           width: 100%;
@@ -79,7 +79,6 @@
         line-height: 20px;
         @include md {
           font-size: 15px;
-          line-height: 22px;
         }
       }
     }
