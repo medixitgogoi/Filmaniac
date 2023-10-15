@@ -1,12 +1,12 @@
 import ContentWrapper from "../contentWrapper/ContentWrapper";
-import Img from "../lazyLoadImage/Img";
-import PosterFallback from "../../assets/no-poster.png";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import dayjs from "dayjs";
-import "./style.scss";
 import CircleRating from "../circleRating/CircleRating";
 import CarouselSpinner from "../spinner/carouselSpinner/CarouselSpinner";
+import Img from "../lazyLoadImage/Img";
+import PosterFallback from "../../assets/no-poster.png";
+import "./style.scss";
 
 const Carousel = ({ data, loading, endpoint, title }) => {
 

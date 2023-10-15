@@ -1,0 +1,73 @@
+@import "../../mixins.scss";
+
+.explorePage {
+  min-height: 700px;
+  padding-top: 100px;
+  .resultNotFound {
+    font-size: 24px;
+    color: var(--black-light);
+  }
+  .pageHeader {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    flex-direction: column;
+    @include md {
+      flex-direction: row;
+    }
+    .pageTitle {
+      font-size: 22px;
+      line-height: 34px;
+      color: white;
+      margin-bottom: 20px;
+      @include md {
+        margin-bottom: 0;
+      }
+    }
+    .filters {
+      font-size: 15px;
+      .react-select-container {
+        &.sortbyDD {
+          width: 100%;
+          flex-shrink: 0;
+          @include md {
+            width: 280px;
+          }
+        }
+        .react-select__control {
+          border: 0;
+          outline: 0;
+          box-shadow: none;
+          background-color: var(--black-light);
+          border-radius: 8px;
+          .react-select__single-value {
+            color: white;
+            padding: 5px 4px;
+            background-color: var(--black3);
+            width: max-content;
+            border-radius: 5px;
+          }
+        }
+        .react-select__menu {
+          top: 40px;
+          margin: 0;
+          padding: 0;
+        }
+      }
+    }
+  }
+  .content {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+    margin-bottom: 50px;
+    @include md {
+      gap: 20px;
+    }
+    .movieCard {
+      .posterBlock {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

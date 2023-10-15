@@ -76,7 +76,7 @@ const Header = () => {
       <ContentWrapper>
 
         <div className="logo" onClick={() => navigate('/')}>
-          <span style={{fontFamily: "revert-layer" }}>Filmaniac</span>
+          <span style={{ fontFamily: "revert-layer" }}>Filmaniac</span>
         </div>
 
         <ul className="menuItems">

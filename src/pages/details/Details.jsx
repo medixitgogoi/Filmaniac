@@ -5,7 +5,6 @@ import Cast from "./cast/Cast";
 import OfficialVideos from "./officialVideos/OfficialVideos";
 import Similar from "./videoCarousels/Similar";
 import Recommendation from "./videoCarousels/Recommendations.";
-import "./style.scss";
 
 const Details = () => {
 
